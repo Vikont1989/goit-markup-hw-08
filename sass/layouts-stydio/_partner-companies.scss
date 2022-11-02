@@ -1,16 +1,18 @@
 
 // /* Список партнерських фірм */
 
+// @import "../utils/placeholders";
+
 .clients {
     padding: 94px 0;
 }
 
 .clients__firm {
-    @include font(700, 36px, 1.16, 0.03em);
-    // font-weight: 700;
-    // font-size: 36px;
-    // line-height: 1.16;
-    // letter-spacing: 0.03em;
+    // @include fonts(700, 36px, 1.16, 0.03em);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -31,9 +33,11 @@
     display: flex;
     color: var(--icon-color);
     border: 1px solid var(--icon-color);
-    @include align-element;
+    justify-content: center;
+    align-items: center;
+    // @include align-element;
     border-radius: 4px;
-    @extend %transition-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {

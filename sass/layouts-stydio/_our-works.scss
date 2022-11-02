@@ -1,16 +1,18 @@
 
 /* Чим ми займаємося та основні приклади робіт our works */
 
+// @import "../utils/placeholders";
+
 .work {
     padding-top: 0;
 }
 
 .heading-work {
-    @include font(700, 36px, 1.16px, 0.03em);
-    // font-weight: 700;
-    // font-size: 36px;
-    // line-height: 1.16;
-    // letter-spacing: 0.03em;
+    // @include fonts(700, 36px, 1.16px, 0.03em);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -37,6 +39,8 @@
     width: 100%;
     height: 70px;
     display: flex;
-    @include align-element;
+    justify-content: center;
+        align-items: center;
+    // @include align-element;
     background-color: rgb(47, 48, 58, 80%);
 }

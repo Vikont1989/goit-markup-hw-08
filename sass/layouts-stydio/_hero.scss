@@ -1,5 +1,7 @@
 // /* HERO блок герой */
 
+// @import "../utils/placeholders";
+
 .hero {
     background-color: var(--futer-bg-color);
     text-align: center;
@@ -18,11 +20,11 @@
 }
 
 .hero-title {
-    @include fonts(900, 44px, 1.36, 0.06em);
-    // font-weight: 900;
-    // font-size: 44px;
-    // line-height: 1.36;
-    // letter-spacing: 0.06em;
+    // @include fonts(900, 44px, 1.36, 0.06em);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
     text-align: center;
     text-transform: uppercase;
     color: var(--background-color);
@@ -32,11 +34,11 @@
 }
 
 .hero-button {
-    @include fonts(700, 16px, 1.87, 0.06em);
-    // font-weight: 700;
-    // font-size: 16px;
-    // line-height: 1.87;
-    // letter-spacing: 0.06em;
+    // @include fonts(700, 16px, 1.87, 0.06em);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
     color: var(--background-color);
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

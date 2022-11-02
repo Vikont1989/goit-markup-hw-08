@@ -1,6 +1,10 @@
 
 // /* Footer підвал сайту контактна інформація фірми */
 
+// @import "../utils/_placeholders.scss";
+
+
+
 .footer {
     background-color: var(--futer-bg-color);
     padding: 60px 0;
@@ -21,17 +25,18 @@
 }
 
 .footer-adres__link {
-    @include fonts(400, 14px, 1.71, 0.03em);
-    // font-weight: 400;
-    // font-size: 14px;
-    // line-height: 1.71;
-    // letter-spacing: 0.03em;
+    // @include fonts(400, 14px, 1.71, 0.03em);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
     text-decoration: none;
     font-style: normal;
     color: var(--background-color);
     display: inline block;
     padding-left: 0px;
-    @include transition-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    // @include transition-color;
     &:hover,
     &:focus {
             color: var(--accent-color);
@@ -39,15 +44,16 @@
 }
 
 .footer-contact__link {
-    @include fonts(400, 14px, 1.71, 0.03em);
-    // font-weight: 400;
-    // font-size: 14px;
-    // line-height: 1.71;
-    // letter-spacing: 0.03em;
+    // @include fonts(400, 14px, 1.71, 0.03em);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
     text-decoration: none;
     font-style: normal;
     color: rgba(255, 255, 255, 0.6);
-    @include transition-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    // @include transition-color;
     &:hover,
     &:focus {
             color: var(--accent-color);
@@ -96,7 +102,9 @@
     color: var(--background-color);
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-   @include align-element;
+    justify-content: center;
+        align-items: center;
+//    @include align-element;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
@@ -129,11 +137,11 @@
 }
 
 .social__btn-telgram {
-    @include fonts(700, 16px, 1.87, 0.03em);
-    // font-weight: 700;
-    // font-size: 16px;
-    // line-height: 1.87;
-    // letter-spacing: 0.03em;
+    // @include fonts(700, 16px, 1.87, 0.03em);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
     background-color: var(--accent-color);
     color: var(--background-color);
     border-radius: 4px;
@@ -142,7 +150,9 @@
     cursor: pointer;
     margin: 0;
     display: flex;
-    @include align-element;
+    justify-content: center;
+    align-items: center;
+    // @include align-element;
 }
 
 .social__icon-telegram {

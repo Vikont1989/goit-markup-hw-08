@@ -1,6 +1,8 @@
 
 // /* ключові можливості та стратегія фірми company strategy */
 
+// @import "../utils/placeholders";
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -74,22 +76,22 @@
 
 
 .caption {
-    @include fonts(700, 14px, 1.14, 0.03em);
-    // font-weight: 700;
-    // font-size: 14px;
-    // line-height: 1.14;
-    // letter-spacing: 0.03em;
+    // @include fonts(700, 14px, 1.14, 0.03em);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
     margin-bottom: 10px;
     box-sizing: border-box;
     text-transform: uppercase;
 }
 
 .visually-hidden__text {
-    @include fonts(400, 14px, 1.75, 0.03em);
-    // font-weight: 400;
-    // font-size: 14px;
-    // line-height: 1.75;
-    // letter-spacing: 0.03em;
+    // @include fonts(400, 14px, 1.75, 0.03em);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.75;
+    letter-spacing: 0.03em;
     color: var(--title-text-color);
     margin-top: 0;
     box-sizing: border-box;

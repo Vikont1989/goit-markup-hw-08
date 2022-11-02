@@ -1,6 +1,8 @@
 
 // /* Фотокарточки !! Галерея прикладів робіт фірми completed projects */
 
+// @import "../utils/placeholders";
+
 .section-portfolio {
     display: flex;
     flex-wrap: wrap;
@@ -18,7 +20,8 @@
     display: block;
     text-decoration: none;
     color: var(--primart-text-color);
-    @include transition-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    // @include transition-color;
     &:hover,
     &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -77,11 +80,11 @@
 }
 
 .company-name {
-    @include fonts(700, 18px, 2, 0.06em);
-    // font-weight: 700;
-    // font-size: 18px;
-    // line-height: 2;
-    // letter-spacing: 0.06em;
+    // @include fonts(700, 18px, 2, 0.06em);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
     margin-bottom: 0px;
 }
 
