@@ -1,0 +1,30 @@
+
+
+@import "./base/vars";
+@import "./base/reset";
+@import "./utils/placeholders";
+
+
+@import "./header/header";
+
+// studio page
+
+@import "./layouts-stydio/hero";
+@import "./layouts-stydio/company-stratrgy";
+@import "./layouts-stydio/our-works";
+@import "./layouts-stydio/our-team";
+@import "./layouts-stydio/partner-companies";
+// @import "./modal-window/modal-window";
+@import "./footer/footer";
+
+// studio portfolio
+
+@import "./layouts-portfolio/nav-buttons";
+@import "./layouts-portfolio/completed-projects";
+@import "./modal-window/modal-window";
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #fff;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    font-size: 14px;
+    padding-top: 80px;
+}
+
