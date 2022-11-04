@@ -5,6 +5,9 @@
 
 .work {
     padding-top: 0;
+    @media screen and (max-width: 1170px) {
+        display: none;
+    }
 }
 
 .heading-work {

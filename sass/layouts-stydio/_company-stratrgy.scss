@@ -19,6 +19,7 @@
 
 .visually-hidden__list {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 0;
     margin-bottom: 0px;
     gap: 30px;
@@ -27,9 +28,21 @@
 .visually-hidden__items {
     list-style: none;
     box-sizing: border-box;
-    max-width: 270px;
+    // max-width: 270px;
+    max-width: 450px;
     margin-top: 0px;
     gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 768px) {
+     width: calc((100% - 2 * 30px) / 2);
+        }
+
+                 @media screen and (min-width: 1170px) {
+                     width: calc((100% - 3 * 30px) / 4);
+                 }
+
     &.antenna::before {
             display: block;
             content: "";
@@ -84,6 +97,7 @@
     margin-bottom: 10px;
     box-sizing: border-box;
     text-transform: uppercase;
+     text-align: center;
 }
 
 .visually-hidden__text {

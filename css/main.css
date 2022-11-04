@@ -168,7 +168,22 @@ body {
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .container {
+    width: 1170px;
+  }
 }
 
 .section {
@@ -240,6 +255,7 @@ body {
 
 .visually-hidden__list {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 0px;
   gap: 30px;
@@ -248,9 +264,21 @@ body {
 .visually-hidden__items {
   list-style: none;
   box-sizing: border-box;
-  max-width: 270px;
+  max-width: 450px;
   margin-top: 0px;
   gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .visually-hidden__items {
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1170px) {
+  .visually-hidden__items {
+    width: calc((100% - 90px) / 4);
+  }
 }
 .visually-hidden__items.antenna::before {
   display: block;
@@ -301,6 +329,7 @@ body {
   margin-bottom: 10px;
   box-sizing: border-box;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .visually-hidden__text {
@@ -316,6 +345,11 @@ body {
 /* Чим ми займаємося та основні приклади робіт our works */
 .work {
   padding-top: 0;
+}
+@media screen and (max-width: 1170px) {
+  .work {
+    display: none;
+  }
 }
 
 .heading-work {
@@ -368,22 +402,29 @@ body {
 }
 
 .team__list {
-  display: flex;
   gap: 30px;
   padding: 0px;
   margin: 0px;
   list-style: none;
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    width: calc((100% - 60px) / 2);
+  }
 }
 
 .items {
   list-style: none;
   box-sizing: border-box;
   max-width: 270px;
-  margin-top: 0px;
+  margin-top: 30px;
   gap: 30px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .team-cards {
