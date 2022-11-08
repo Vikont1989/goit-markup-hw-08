@@ -58,8 +58,54 @@
             </a>
           </li>
         </ul>
+      </div> -->
+
+      <!-- <div class="mob-menu"> -->
+      <button type="button" class="menu-open-btn">O</button>
+      <div class="mob-menu">
+        <div class="mob-container">
+           <button type="button" class="menu-close-btn">X</button>
+           <div class="nav-conteiner">
+             <ul class="mob-nav">
+            <li class="mob-nav__item">
+              <a href="./index.html" class="mob-nav__link current">Студія</a>
+            </li>
+            <li class="mob-nav__item">
+              <a href="./portfolio.html" class="mob-nav__link">Портфоліо</a>
+            </li>
+            <li class="mob-nav__item">
+              <a href="" class="mob-nav__link">Контакти</a>
+            </li>
+          </ul>
+           </div>
+       
+        <div class="mob-contacts">
+             <ul class="mob-nav-contacts">
+            <li>
+            <a href="tel:+380961111111" class="mob-contacts__tel-link">
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="mob-contacts__mail-link">
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        </div>
+        <div class="mob-footer-list"> 
+          <ul class="mob-social-list">
+          <li class="mob-social-media">Instagram</li>
+          <li class="mob-social-media">Twitter</li>
+          <li class="mob-social-media">Facebook</li>
+          <li class="mob-social-media">Linkedin</li>
+        </ul>
       </div>
-    </header> -->
+       
+      </div>
+        <!-- </div> -->
+      </div>
+    </header>
     <main>
       <!--Блок герой основний слайд сайту-->
       <!-- <section class="hero">
@@ -157,11 +203,33 @@
           <h2 class="team__heading">Наша команда</h2>
           <ul class="team__list">
             <li class="items">
-              <img
+              <picture>
+                <source 
+                 srcset=" 
+                   ./images/mobil-foto/іgor-1x.jpg 1x, 
+                  ./images/mobil-foto/іgor-2x.jpg 2x
+                  "
+                  media="(min-width: 450px)"/>
+                  
+                  <source 
+                  srcset="./images/tablet-foto/igor-1x-tablet.jpg 1x,
+                         ./images/tablet-foto/igor-2x-tablet.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  />
+                 
+                  <source srcset=" 
+                   ./images/mobil-foto/іgor-1x.jpg 1x, 
+                  ./images/mobil-foto/іgor-2x.jpg 2x
+                  "
+                  media="(mix-width: 1200px)" />
+              
+                <img
                 src="./images/avatar/igor.jpg"
                 alt="Ігор демяненко"
-                width="270"
-              />
+                width="418"/>
+              </picture>
+            
               <div class="team-cards">
                 <h3 class="names">Ігор Дем'яненко</h3>
                 <p class="desc">Product Designer</p>
