@@ -80,6 +80,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 
 .page-header > .container {
@@ -200,19 +201,24 @@ body {
 }
 
 .menu-open-btn {
-  margin-right: auto;
+  margin-left: auto;
   background-color: transparent;
+  border: none;
 }
 
 .menu-close-btn {
+  display: block;
   margin-left: auto;
   background-color: transparent;
+  border: none;
 }
 
 .mob-menu {
   position: fixed;
   top: 0;
-  background-color: var(#ffffff);
+  background-color: var(--background-color);
+  width: 100vw;
+  height: 100vh;
   z-index: 1;
   padding-top: 0;
 }
@@ -226,7 +232,6 @@ body {
 
 .nav-conteiner {
   outline: 1px solid tomato;
-  margin-left: 25px;
   margin-right: auto;
 }
 
@@ -286,6 +291,16 @@ body {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+
+.mob-social-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  text-decoration: none;
 }
 
 .hero {

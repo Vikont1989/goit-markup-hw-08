@@ -1,25 +1,28 @@
 
 .menu-open-btn {
-margin-right: auto;
+margin-left: auto;
 background-color: transparent;
+border:none;
 
 }
 
 .menu-close-btn {
+  display: block;
   margin-left: auto;
   background-color: transparent;
+  border:none;
 }
 
-.mob-menu {
-  position: fixed;
-  top: 0;
-  background-color: var(#ffffff);
+// .mob-menu {
+//   position: fixed;
+//   top: 0;
+//   background-color: var(--background-color);
 //   width: 100vw;
 //   height: 100vh;
-  z-index: 1;
-  padding-top: 0;
-//   padding-bottom: 48px;
-}
+//   z-index: 1;
+//   padding-top: 0;
+// //   padding-bottom: 48px;
+// }
 
 .mob-container {
     width: 100%;
@@ -32,7 +35,7 @@ background-color: transparent;
 
 .nav-conteiner {
     outline: 1px solid tomato;
-    margin-left: 25px;
+    // margin-left: 25px;
     margin-right: auto;
 }
 
@@ -106,4 +109,14 @@ gap: 20px;
         line-height: 1.22;
         letter-spacing: 0.02em;
         color: var(--accent-color);
+}
+
+.mob-social-link {
+  font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+    text-decoration: none;
 }
