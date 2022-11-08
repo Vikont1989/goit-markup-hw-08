@@ -204,6 +204,11 @@ body {
   background-color: transparent;
 }
 
+.menu-close-btn {
+  margin-left: auto;
+  background-color: transparent;
+}
+
 .mob-menu {
   position: fixed;
   top: 0;
@@ -217,11 +222,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 0;
-}
-
-.menu-close-btn {
-  margin-left: auto;
-  background-color: transparent;
 }
 
 .nav-conteiner {

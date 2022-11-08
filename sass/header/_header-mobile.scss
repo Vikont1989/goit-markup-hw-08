@@ -2,6 +2,12 @@
 .menu-open-btn {
 margin-right: auto;
 background-color: transparent;
+
+}
+
+.menu-close-btn {
+  margin-left: auto;
+  background-color: transparent;
 }
 
 .mob-menu {
@@ -22,11 +28,7 @@ background-color: transparent;
     padding-top: 0;
 }
 
-.menu-close-btn {
-  margin-left: auto;
-  background-color:transparent;
-  
-}
+
 
 .nav-conteiner {
     outline: 1px solid tomato;
@@ -50,6 +52,7 @@ background-color: transparent;
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--primart-text-color);
+    
 }
 
 .mob-contacts {

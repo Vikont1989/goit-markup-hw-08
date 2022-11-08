@@ -61,10 +61,18 @@
       </div> -->
 
       <!-- <div class="mob-menu"> -->
-      <button type="button" class="menu-open-btn">O</button>
+      <button type="button" class="menu-open-btn">
+        <svg width="20px" height="20px">
+          <use href="./images/icon/sprite.svg#icon-menu_24px"></use>
+        </svg>
+      </button>
       <div class="mob-menu">
         <div class="mob-container">
-           <button type="button" class="menu-close-btn">X</button>
+           <button type="button" class="menu-close-btn">
+            <svg width="20px" height="20px">
+          <use href="./images/icon/sprite.svg#icon-close_24px"></use>
+        </svg>
+           </button>
            <div class="nav-conteiner">
              <ul class="mob-nav">
             <li class="mob-nav__item">
@@ -219,10 +227,10 @@
                   />
                  
                   <source srcset=" 
-                   ./images/mobil-foto/іgor-1x.jpg 1x, 
-                  ./images/mobil-foto/іgor-2x.jpg 2x
+                   ./images/desktop-foto/іgor-1x.jpg 1x, 
+                  ./images/desktop-foto/іgor-2x.jpg 2x
                   "
-                  media="(mix-width: 1200px)" />
+                  media="(max-width: 1200px)" />
               
                 <img
                 src="./images/avatar/igor.jpg"
@@ -273,7 +281,34 @@
                 </ul>
               </div>
             </li>
+
             <li class="items">
+              <picture>
+                <source 
+                 srcset=" 
+                   ./images/mobil-foto/olga-1x.jpg 1x, 
+                  ./images/mobil-foto/olga-2x.jpg 2x
+                  "
+                  media="(min-width: 450px)"/>
+                  
+                  <source 
+                  srcset="./images/tablet-foto/olga-1x-tablet.jpg 1x,
+                         ./images/tablet-foto/olga-2x-tablet.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  />
+                 
+                  <source srcset=" 
+                   ./images/mobil-foto/olga-1x.jpg 1x, 
+                  ./images/mobil-foto/olga-2x.jpg 2x
+                  "
+                  media="(max-width: 1200px)" />
+              
+                <img
+                src="./images/avatar/olga.jpg"
+                alt="olga"
+                width="418"/>
+              </picture>
               <img
                 src="./images/avatar/olga.jpg"
                 alt="Ольга Репіна"
