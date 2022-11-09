@@ -213,16 +213,6 @@ body {
   border: none;
 }
 
-.mob-menu {
-  position: fixed;
-  top: 0;
-  background-color: var(--background-color);
-  width: 100vw;
-  height: 100vh;
-  z-index: 1;
-  padding-top: 0;
-}
-
 .mob-container {
   width: 100%;
   padding-left: 15px;
@@ -514,8 +504,24 @@ body {
   list-style: none;
   flex-wrap: wrap;
   display: flex;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .team__list .team__list {
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1170px) {
+  .team__list {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
+@media screen and (min-width: 768px) {
+  .team__list {
+    width: calc((100% - 60px) / 2);
+  }
+}
 .items {
   flex-basis: calc((100% - 30px) / 2);
   list-style: none;

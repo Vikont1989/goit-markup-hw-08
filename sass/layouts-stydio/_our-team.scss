@@ -27,24 +27,33 @@
     list-style: none;
     flex-wrap: wrap;
     display: flex;
-        // @media screen and(min-width: 768px) {
-        //     .team__list {
-        //        width: calc((100% - 60px)/2);
-        //     }
-        // }
+    width: 100%;
+        @media screen and(min-width: 768px) {
+            .team__list {
+               width: calc((100% - 60px)/2);
+            }
+        }
+        
+                @media screen and (min-width: 1170px) {
+                    width: calc((100% - 3 * 30px) / 4);
+                }
+
         }
 
-        // @media screen and (min-width: 768px)
-        //   .team__list {
-        //     width: calc((100% - 60px)/2);
-        //   }  
-        
-   
+                 @media screen and(min-width: 768px) {
+                     .team__list {
+                         width: calc((100% - 60px)/2);
+                     }
+                 }
+
+                                //  @media screen and (min-width: 1170px) {
+                                //      width: calc((100% - 3 * 30px) / 4);
+                                //  }
+
+           
 
 .items {
     flex-basis: calc((100% - 30px) / 2);
-
-
 
     list-style: none;
     gap: 30px;
