@@ -1,112 +1,111 @@
-
 // /* ключові можливості та стратегія фірми company strategy */
 
 // @import "../utils/placeholders";
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .visually-hidden__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 0;
-    margin-bottom: 0px;
-    gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 0px;
+  gap: 30px;
 }
 
 .visually-hidden__items {
-    list-style: none;
-    box-sizing: border-box;
-    // max-width: 270px;
-    max-width: 450px;
-    margin-top: 0px;
-    gap: 30px;
-    margin-left: auto;
-    margin-right: auto;
+  list-style: none;
+  box-sizing: border-box;
+  // max-width: 270px;
+  max-width: 450px;
+  margin-top: 0px;
+  gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
 
-    @media screen and (min-width: 768px) {
-     width: calc((100% - 2 * 30px) / 2);
-        }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 2);
+  }
 
-                 @media screen and (min-width: 1170px) {
-                     width: calc((100% - 3 * 30px) / 4);
-                 }
+  @media screen and (min-width: 1170px) {
+    width: calc((100% - 3 * 30px) / 4);
+  }
 
-    &.antenna::before {
-            display: block;
-            content: "";
-            height: 120px;
-            margin-bottom: 30px;
-            background-color: var(--background-color-team);
-            background-image: url(../images/icon/antenna.svg);
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-                &.clock::before {
-                    display: block;
-                    content: "";
-                    height: 120px;
-                    margin-bottom: 30px;
-                    background-color: var(--background-color-team);
-                    background-image: url(../images/icon/clock.svg);
-                    background-repeat: no-repeat;
-                    background-position: center;
-                }
-                               &.diagrama::before {
-                                    display: block;
-                                    content: "";
-                                    height: 120px;
-                                    margin-bottom: 30px;
-                                    background-color: var(--background-color-team);
-                                    background-image: url(../images/icon/diagram.svg);
-                                    background-repeat: no-repeat;
-                                    background-position: center;
-                                }
-                                                                &.astronaut::before {
-                                                                    display: block;
-                                                                    content: "";
-                                                                    height: 120px;
-                                                                    margin-bottom: 30px;
-                                                                    background-color: var(--background-color-team);
-                                                                    background-image: url(../images/icon/astronaut.svg);
-                                                                    background-repeat: no-repeat;
-                                                                    background-position: center;
-                                                                }
+  &.antenna::before {
+    display: block;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--background-color-team);
+    background-image: url(../images/icon/antenna.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &.clock::before {
+    display: block;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--background-color-team);
+    background-image: url(../images/icon/clock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &.diagrama::before {
+    display: block;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--background-color-team);
+    background-image: url(../images/icon/diagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &.astronaut::before {
+    display: block;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--background-color-team);
+    background-image: url(../images/icon/astronaut.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
-
-
-
 .caption {
-    // @include fonts(700, 14px, 1.14, 0.03em);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    text-transform: uppercase;
-     text-align: center;
+  // @include fonts(700, 14px, 1.14, 0.03em);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 767) {
+    text-align: center;
+  }
 }
 
 .visually-hidden__text {
-    // @include fonts(400, 14px, 1.75, 0.03em);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.75;
-    letter-spacing: 0.03em;
-    color: var(--title-text-color);
-    margin-top: 0;
-    box-sizing: border-box;
+  // @include fonts(400, 14px, 1.75, 0.03em);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.75;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-top: 0;
+  box-sizing: border-box;
 }

@@ -1,160 +1,218 @@
-
 // /* Footer підвал сайту контактна інформація фірми */
 
 // @import "../utils/_placeholders.scss";
 
-
-
 .footer {
-    background-color: var(--futer-bg-color);
-    padding: 60px 0;
-    display: flex;
+  background-color: var(--futer-bg-color);
+  padding: 60px 0;
+  // display: flex;
 }
-.footer>.container {
+.footer > .container {
+  @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
+  }
 }
+
+.footer-wrap {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: space-around;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: auto;
+  }
+}
+
 .footer__logo {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
     margin-right: 70px;
+  }
 }
 
 .logo-footer {
-    color: var(--background-color);
-    margin-bottom: 20px;
-    display: block;
+  color: var(--background-color);
+  margin-bottom: 20px;
+  display: block;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  text-align: center;
 }
 
 .footer-adres__link {
-    // @include fonts(400, 14px, 1.71, 0.03em);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    font-style: normal;
-    color: var(--background-color);
-    display: inline block;
-    padding-left: 0px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    // @include transition-color;
-    &:hover,
-    &:focus {
-            color: var(--accent-color);
-        }
+  // @include fonts(400, 14px, 1.71, 0.03em);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  font-style: normal;
+  color: var(--background-color);
+  display: inline block;
+  padding-left: 0px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  // @include transition-color;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer-contact__link {
-    // @include fonts(400, 14px, 1.71, 0.03em);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    font-style: normal;
-    color: rgba(255, 255, 255, 0.6);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    // @include transition-color;
-    &:hover,
-    &:focus {
-            color: var(--accent-color);
-        }
+  // @include fonts(400, 14px, 1.71, 0.03em);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  // @include transition-color;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .items-footer {
-    margin-bottom: 0px;
-    padding-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
 }
 
 .items-footer:not(:last-child) {
-    margin-bottom: 9px;
+  margin-bottom: 9px;
 }
-
 
 // /* Блок на медіа посилання у футорі media link */
 
 .icon-container {
-    margin-top: 12px;
-    margin-right: auto;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 60px;
+    }
+  }
 }
 
 .icon-container__title {
-    color: var(--background-color);
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+  color: var(--background-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .icon-container__nav {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 16px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 16px;
 }
 
 .icon-container__link {
-    width: 44px;
-    height: 44px;
-    display: flex;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  color: var(--background-color);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  align-items: center;
+  //    @include align-element;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
     color: var(--background-color);
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    justify-content: center;
-        align-items: center;
-//    @include align-element;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-            color: var(--background-color);
-            background-color: var(--accent-color);
-        }
+    background-color: var(--accent-color);
+  }
 }
 
 .icon-container__svg {
-    fill: currentColor;
+  fill: currentColor;
 }
 
 // /* Footer Form Форма у футері */
 
 .social__form {
+  @media screen and (min-width: 1200px) {
     display: flex;
+  }
 }
 
 .social__email {
+  width: 100%;
+  max-width: 450px;
+  height: 50px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+  padding-left: 15px;
+  background-color: transparent;
+  color: var(--background-color);
+
+  @media screen and (max-width: 1200px) {
+    display: block;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1200px) {
     width: 358px;
-    height: 50px;
-    margin-right: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    outline: none;
-    padding-left: 15px;
-    background-color: transparent;
-    color: var(--background-color)
+  }
 }
 
 .social__btn-telgram {
-    // @include fonts(700, 16px, 1.87, 0.03em);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;
-    background-color: var(--accent-color);
-    color: var(--background-color);
-    border-radius: 4px;
-    padding: 10px 28px 10px 28px;
-    border: none;
-    cursor: pointer;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // @include align-element;
+  // @include fonts(700, 16px, 1.87, 0.03em);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  border-radius: 4px;
+  padding: 10px 28px 10px 28px;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // @include align-element;
+
+  @media screen and (max-width: 1199px) {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
 }
 
 .social__icon-telegram {
-    margin-left: 10px;
+  margin-left: 10px;
 }

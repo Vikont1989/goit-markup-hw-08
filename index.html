@@ -22,12 +22,12 @@
 
     <!--header шапка-->
 
-    <!-- <header class="page-header">
+    <header class="page-header">
       <div class="container">
-        <nav class="page-header__nav">
-          <a href="./index.html" class="slogan"
-            ><span class="logo">Web</span>Studio</a
+         <a href="./index.html" class="slogan"
+           ><span class="logo">Web</span>Studio</a
           >
+        <nav class="page-header__nav">
           <ul class="main-nav">
             <li class="main-nav__item">
               <a href="./index.html" class="main-nav__link current">Студія</a>
@@ -41,7 +41,7 @@
           </ul>
         </nav>
         <ul class="nav-contacts">
-          <li>
+          <li class="nav-item">
             <a href="mailto:info@devstudio.com" class="nav-contacts__link">
               <svg class="nav-contacts__icon" width="16" height="12">
                 <use href="./images/icon/sprite.svg#icon-envelope"></use>
@@ -49,7 +49,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="nav-item">
             <a href="tel:+380961111111" class="nav-contacts__link">
               <svg class="nav-contacts__icon" width="12" height="16">
                 <use href="./images/icon/sprite.svg#icon-smartphone"></use>
@@ -58,17 +58,17 @@
             </a>
           </li>
         </ul>
-      </div> -->
-
-      <!-- <div class="mob-menu"> -->
-      <!-- <button type="button" class="menu-open-btn">
+         <button type="button" class="menu-close-btn js-open-menu">
         <svg width="20px" height="20px">
           <use href="./images/icon/sprite.svg#icon-menu_24px"></use>
         </svg>
       </button>
-      <div class="mob-menu">
+      </div>
+     
+       <div class="mob-menu js-menu-container"> 
+      
         <div class="mob-container">
-           <button type="button" class="menu-close-btn">
+           <button type="button" class="js-close-menu">
             <svg width="20px" height="20px">
           <use href="./images/icon/sprite.svg#icon-close_24px"></use>
         </svg>
@@ -116,20 +116,17 @@
            </a>
           </li>
         </ul>
+      
       </div>
-       
-      </div>
-        <!-- </div> -->
-      </div> -->
     </header>
     <main>
       <!--Блок герой основний слайд сайту-->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
         </div>
-      </section> -->
+      </section>
 
       <!--Ключові можливості та стратегія фірми-->
       
@@ -563,11 +560,13 @@
 
     <!--Footer підвал сайту контактна інформація фірми-->
 
-    <!-- <footer class="footer">
-      <!-- <div class="container">
+    <footer class="footer">
+       <div class="container">
+        
+       <div class="footer-wrap">
          <div class="footer__logo">
          <address class="footer-bloc">
-          <a href="./index.html" class="slogan logo-footer"
+          <a href="./index.html" class="logo-footer"
              ><span class="logo">Web</span>Studio</a
            >
             <ul class="nav-footer">
@@ -591,9 +590,8 @@
             </ul>
           </address>
          </div>
-
          <!--Блок на медіа посилання у футорі media link-->
-<!-- 
+
         <div class="icon-container">
         <p class="icon-container__title">приєднуйтесь</p>
           <ul class="icon-container__nav">
@@ -634,11 +632,12 @@
                     </a>
                   </li>
               </ul>
-            </div> -->
+            </div>
+       </div>
 
             <!--Footer Form Форма у футері-->
             
-          <!-- <div>
+          <div>
               <p class="icon-container__title">Підпишіться на розсилку</p>
               <form class="social__form">
                      <input class="social__email" type="email" name="email" placeholder="E-mail">
@@ -650,7 +649,7 @@
                        </svg>
                 </button>
               </form>   
-            </div> -->
+            </div>
         </div>     
     </footer> 
 
@@ -717,21 +716,7 @@
               </button>  
             </div>
           </div>
-    <script src="./js/modal.js">
-      (() => {
-  const refs = {
-    openModalBtn: document.querySelector("[data-modal-open]"),
-    closeModalBtn: document.querySelector("[data-modal-close]"),
-    modal: document.querySelector("[data-modal]"),
-  };
-
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
-
-  function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
-  }
-})();
-    </script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mob-menu.js"></script>
   </body>
 </html>

@@ -3,48 +3,76 @@
 // @import "../utils/placeholders";
 
 .hero {
-    background-color: var(--futer-bg-color);
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+  background-color: var(--futer-bg-color);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 118px 0;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/mobil-foto/hero-1x.jpg);
+  max-width: 1600px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/tablet-foto/hero-1x-tablet.jpg);
+  }
+
+  @media screen and (min-width: 1200px) {
     padding: 200px 0;
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/pic/hero.jpg);
-    max-width: 1600px;
     height: 600px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/pic/hero.jpg);
+  }
 }
 
 .hero-title {
-    // @include fonts(900, 44px, 1.36, 0.06em);
-    font-weight: 900;
+  // @include fonts(900, 44px, 1.36, 0.06em);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--background-color);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 360px;
+
+  @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--background-color);
-    margin-left: auto;
-    margin-right: auto;
     width: 696px;
+  }
 }
 
 .hero-button {
-    // @include fonts(700, 16px, 1.87, 0.06em);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    color: var(--background-color);
-    background-color: var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    margin-top: 30px;
-    padding: 10px 32px;
-    border: none;
-    cursor: pointer;
+  // @include fonts(700, 16px, 1.87, 0.06em);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--background-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-top: 30px;
+  padding: 10px 32px;
+  border: none;
+  cursor: pointer;
 }
