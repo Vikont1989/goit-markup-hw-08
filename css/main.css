@@ -672,6 +672,14 @@ body {
   display: flex;
   gap: 30px;
 }
+@media screen and (min-width: 768px) {
+  .clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-bottom: -30px;
+  }
+}
 
 .clients__items {
   width: 170px;

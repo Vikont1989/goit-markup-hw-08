@@ -19,11 +19,32 @@
 .clients__list {
   display: flex;
   gap: 30px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-bottom: -30px;
+  }
 }
 
 .clients__items {
   width: 170px;
   height: 92px;
+
+  @media screen and (min-width:768px) {
+   flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+
+  	@media screen and (min-width: 1140px) {
+		flex-basis: calc((100% - 3 * 30px) / 3);
+	}
+
+  &:not(:last-child) {
+		@media screen and (max-width: 767px) {
+			margin-bottom: 30px;
+		}
+	}
 }
 
 .clients__link {
@@ -45,14 +66,14 @@
     border-color: var(--accent-color);
   }
 
-  @media screen and (max-width: 450px) {
-    width: calc((100% - 30px) / 2);
-  }
+//   @media screen and (max-width: 450px) {
+//     width: calc((100% - 30px) / 2);
+//   }
 
-  //   @media screen and (min-width: 450px) {
-  //     width: calc((100% - 5 * 30px) / 2);
-  //   }
-}
+//   //   @media screen and (min-width: 450px) {
+//   //     width: calc((100% - 5 * 30px) / 2);
+//   //   }
+// }
 
 .clients__icon {
   fill: currentColor;
