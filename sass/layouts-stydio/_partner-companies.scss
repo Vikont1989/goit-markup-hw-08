@@ -18,6 +18,7 @@
 
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 
   @media screen and (min-width: 768px) {
@@ -29,7 +30,8 @@
 }
 
 .clients__items {
-  width: 170px;
+  // width: 170px;
+  width: calc(100% - 30px) / 2;
   height: 92px;
 
   @media screen and (min-width:768px) {
